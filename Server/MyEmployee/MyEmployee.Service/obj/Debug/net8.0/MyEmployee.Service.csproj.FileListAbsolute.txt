@@ -1,0 +1,17 @@
+D:\kandupidtham\ForTest\Server\MyEmployee\MyEmployee.Service\bin\Debug\net8.0\MyEmployee.Service.deps.json
+D:\kandupidtham\ForTest\Server\MyEmployee\MyEmployee.Service\bin\Debug\net8.0\MyEmployee.Service.runtimeconfig.json
+D:\kandupidtham\ForTest\Server\MyEmployee\MyEmployee.Service\bin\Debug\net8.0\MyEmployee.Service.dll
+D:\kandupidtham\ForTest\Server\MyEmployee\MyEmployee.Service\bin\Debug\net8.0\MyEmployee.Service.pdb
+D:\kandupidtham\ForTest\Server\MyEmployee\MyEmployee.Service\bin\Debug\net8.0\MyEmployee.Domain.dll
+D:\kandupidtham\ForTest\Server\MyEmployee\MyEmployee.Service\bin\Debug\net8.0\MyEmployee.Domain.pdb
+D:\kandupidtham\ForTest\Server\MyEmployee\MyEmployee.Service\obj\Debug\net8.0\MyEmployee.Service.csproj.AssemblyReference.cache
+D:\kandupidtham\ForTest\Server\MyEmployee\MyEmployee.Service\obj\Debug\net8.0\MyEmployee.Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\kandupidtham\ForTest\Server\MyEmployee\MyEmployee.Service\obj\Debug\net8.0\MyEmployee.Service.AssemblyInfoInputs.cache
+D:\kandupidtham\ForTest\Server\MyEmployee\MyEmployee.Service\obj\Debug\net8.0\MyEmployee.Service.AssemblyInfo.cs
+D:\kandupidtham\ForTest\Server\MyEmployee\MyEmployee.Service\obj\Debug\net8.0\MyEmployee.Service.csproj.CoreCompileInputs.cache
+D:\kandupidtham\ForTest\Server\MyEmployee\MyEmployee.Service\obj\Debug\net8.0\MyEmploy.09E25F00.Up2Date
+D:\kandupidtham\ForTest\Server\MyEmployee\MyEmployee.Service\obj\Debug\net8.0\MyEmployee.Service.dll
+D:\kandupidtham\ForTest\Server\MyEmployee\MyEmployee.Service\obj\Debug\net8.0\refint\MyEmployee.Service.dll
+D:\kandupidtham\ForTest\Server\MyEmployee\MyEmployee.Service\obj\Debug\net8.0\MyEmployee.Service.pdb
+D:\kandupidtham\ForTest\Server\MyEmployee\MyEmployee.Service\obj\Debug\net8.0\MyEmployee.Service.genruntimeconfig.cache
+D:\kandupidtham\ForTest\Server\MyEmployee\MyEmployee.Service\obj\Debug\net8.0\ref\MyEmployee.Service.dll

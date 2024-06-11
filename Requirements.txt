@@ -1,0 +1,14 @@
+NuGet packages:
+
+Microsoft.EntityFrameworkCore
+Microsoft.EntityFrameworkCore.Tools
+Microsoft.EntityFrameworkCore.SqlServer
+
+On package-manager console:
+Add-Migration
+Update-Database
+
+
+
+For Client side:
+npm install ag-grid-angular

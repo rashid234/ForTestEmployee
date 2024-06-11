@@ -1,0 +1,14 @@
+D:\kandupidtham\ForTest\Server\MyEmployee\MyEmployee.Domain\bin\Debug\net8.0\MyEmployee.Domain.deps.json
+D:\kandupidtham\ForTest\Server\MyEmployee\MyEmployee.Domain\bin\Debug\net8.0\MyEmployee.Domain.runtimeconfig.json
+D:\kandupidtham\ForTest\Server\MyEmployee\MyEmployee.Domain\bin\Debug\net8.0\MyEmployee.Domain.dll
+D:\kandupidtham\ForTest\Server\MyEmployee\MyEmployee.Domain\bin\Debug\net8.0\MyEmployee.Domain.pdb
+D:\kandupidtham\ForTest\Server\MyEmployee\MyEmployee.Domain\obj\Debug\net8.0\MyEmployee.Domain.csproj.AssemblyReference.cache
+D:\kandupidtham\ForTest\Server\MyEmployee\MyEmployee.Domain\obj\Debug\net8.0\MyEmployee.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\kandupidtham\ForTest\Server\MyEmployee\MyEmployee.Domain\obj\Debug\net8.0\MyEmployee.Domain.AssemblyInfoInputs.cache
+D:\kandupidtham\ForTest\Server\MyEmployee\MyEmployee.Domain\obj\Debug\net8.0\MyEmployee.Domain.AssemblyInfo.cs
+D:\kandupidtham\ForTest\Server\MyEmployee\MyEmployee.Domain\obj\Debug\net8.0\MyEmployee.Domain.csproj.CoreCompileInputs.cache
+D:\kandupidtham\ForTest\Server\MyEmployee\MyEmployee.Domain\obj\Debug\net8.0\MyEmployee.Domain.dll
+D:\kandupidtham\ForTest\Server\MyEmployee\MyEmployee.Domain\obj\Debug\net8.0\refint\MyEmployee.Domain.dll
+D:\kandupidtham\ForTest\Server\MyEmployee\MyEmployee.Domain\obj\Debug\net8.0\MyEmployee.Domain.pdb
+D:\kandupidtham\ForTest\Server\MyEmployee\MyEmployee.Domain\obj\Debug\net8.0\MyEmployee.Domain.genruntimeconfig.cache
+D:\kandupidtham\ForTest\Server\MyEmployee\MyEmployee.Domain\obj\Debug\net8.0\ref\MyEmployee.Domain.dll
