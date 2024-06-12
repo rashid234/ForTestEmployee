@@ -15,7 +15,7 @@ export class CreatepageComponent {
     role: '',
     description: ''
   }
-  patternWithoutSpecialChars = "^[^!@#$%^&*(),.?\":{}|<>]*$";
+  patternWithoutSpecialChars = "^[a-zA-Z]*$";
   id: string | null = null;
 
   constructor(private employeeService: EmployeeDataServiceService, private router: Router) { }

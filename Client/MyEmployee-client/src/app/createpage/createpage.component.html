@@ -9,7 +9,7 @@
                 <div *ngIf="name.errors?.['required']">Name is required.</div>
                 <div *ngIf="name.errors?.['minlength']">Name must be at least 2 characters long.</div>
                 <div *ngIf="name.errors?.['maxlength']">Name cannot be more than 40 characters long.</div>
-                <div *ngIf="name.errors?.['pattern']">Name cannot contain special characters.</div>
+                <div *ngIf="name.errors?.['pattern']">Name cannot contain special characters or numbers.</div>
             </div>
         </div>
         <div class="mb-3">

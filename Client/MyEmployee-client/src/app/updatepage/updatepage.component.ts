@@ -15,7 +15,7 @@ export class UpdatepageComponent {
     role: '',
     description: ''
   }
-  patternWithoutSpecialChars = "^[^!@#$%^&*(),.?\":{}|<>]*$";
+  patternWithoutSpecialChars = "^[a-zA-Z]*$";
   id: string | null = null;
 
   constructor(private route: ActivatedRoute, private employeeService: EmployeeDataServiceService) { }
