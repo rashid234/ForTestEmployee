@@ -1,22 +1,26 @@
-Server-Side:
-NuGet packages:
-Microsoft.EntityFrameworkCore
-Microsoft.EntityFrameworkCore.Tools
-Microsoft.EntityFrameworkCore.SqlServer
+Installation setup:	
+	Server-Side:
+		NuGet packages:
+			Microsoft.EntityFrameworkCore
+			Microsoft.EntityFrameworkCore.Tools
+			Microsoft.EntityFrameworkCore.SqlServer
 
-Replace Server side ConnectionString with your SQLServer Credentials
-On package-manager console:
-Make default project as MyEmployee.Service
-Set MyEmployee.WebApi as startup project
-Add-Migration
-Update-Database
-
-
-
-Client-Side:
-npm install ag-grid-angular
-npm install bootstrap
+		Set MyEmployee.WebApi as startup project
+		Replace Server side ConnectionString with your SQLServer Credentials
+		On package-manager console:
+			Make default project as MyEmployee.Service
+			Add-Migration //run command
+			Update-Database //run command
 
 
-Client server integration:
-Make sure baseURL in file employeeDataService in client side match with the URL of server
+
+	Client-Side:
+		npm install ag-grid-angular
+		npm install bootstrap 
+		OR
+		npm install
+		ng serve
+
+
+	Client server integration:
+		Make sure baseURL in file employeeDataService in client side match with the URL of server
