@@ -1,5 +1,5 @@
 <section class="container-fluid mt-2">
     <ag-grid-angular class="ag-theme-quartz" style="height: 500px;width: 100%;" [rowData]="employeeLists"
-        [columnDefs]="colDefs" [rowHeight]="70" [defaultColDef]="defaultColDef">
+        [columnDefs]="colDefs" [rowHeight]="70" [defaultColDef]="defaultColDef" [pagination]="true" [paginationPageSizeSelector]="[5,10,30,100]">
     </ag-grid-angular>
 </section>
