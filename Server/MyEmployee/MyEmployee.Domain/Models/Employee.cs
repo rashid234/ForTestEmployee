@@ -12,10 +12,13 @@ namespace MyEmployee.Domain.Models
         public int Id { get; set; }
 
         [Required]
+        [MaxLength(50)]
         public string Name { get; set; }
 
         public string? Description { get; set; }
 
+        [Required]
+        [MaxLength(70)]
         public string Role { get; set; }
     }
 }

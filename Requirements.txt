@@ -6,6 +6,8 @@ Microsoft.EntityFrameworkCore.SqlServer
 
 Replace Server side ConnectionString with your SQLServer Credentials
 On package-manager console:
+Make default project as MyEmployee.Service
+Set MyEmployee.WebApi as startup project
 Add-Migration
 Update-Database
 
