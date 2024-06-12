@@ -138,3 +138,4 @@ D:\kandupidtham\ForTest\Server\MyEmployee\MyEmployee.WebApi\obj\Debug\net8.0\ref
 D:\kandupidtham\ForTest\Server\MyEmployee\MyEmployee.WebApi\obj\Debug\net8.0\MyEmployee.WebApi.pdb
 D:\kandupidtham\ForTest\Server\MyEmployee\MyEmployee.WebApi\obj\Debug\net8.0\MyEmployee.WebApi.genruntimeconfig.cache
 D:\kandupidtham\ForTest\Server\MyEmployee\MyEmployee.WebApi\obj\Debug\net8.0\ref\MyEmployee.WebApi.dll
+D:\kandupidtham\ForTest\Server\MyEmployee\MyEmployee.WebApi\obj\Debug\net8.0\MyEmployee.WebApi.sourcelink.json

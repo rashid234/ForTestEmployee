@@ -23,6 +23,13 @@ namespace MyEmployee.Service.Services
             var response = new ServerResponse<bool>();
             try
             {
+                if (string.IsNullOrEmpty(employee.Name) || string.IsNullOrEmpty(employee.Role))
+                {
+                    response.Result = false;
+                    response.IsValid = false;
+                    response.ResponseMessage = "Name and role should not be empty";
+                    return response;
+                }
                 var user = new Employee()
                 {
                     Name = employee.Name,
@@ -33,6 +40,7 @@ namespace MyEmployee.Service.Services
                 _db.SaveChanges();
                 response.Result = true;
                 response.IsValid = true;
+                response.ResponseMessage = "Item added successfully";
             }
             catch (Exception ex)
             {
@@ -58,6 +66,44 @@ namespace MyEmployee.Service.Services
                 response.IsValid = false;
                 response.ResponseMessage = ex.Message;
             }
+            return response;
+        }
+
+        public ServerResponse<Employee> ReadOne(int id)
+        {
+            var response = new ServerResponse<Employee>();
+            try
+            {
+                var employees = _db.Employees.FirstOrDefault(x => x.Id == id);
+
+                response.Result = employees;
+                response.IsValid = true;
+            }
+            catch (Exception ex)
+            {
+                response.IsValid = false;
+                response.ResponseMessage = ex.Message;
+            }
+            return response;
+        }
+
+        public ServerResponse<bool> Update(int id, Employeedto employee)
+        {
+            var response = new ServerResponse<bool>();
+            var entity = _db.Employees.SingleOrDefault(x => x.Id == id);
+            if (entity == null)
+            {
+                response.Result = false;
+                response.IsValid = false;
+                return response; 
+            }
+            entity.Name = employee.Name;
+            entity.Role = employee.Role;
+            entity.Description = employee.Description;
+            _db.SaveChanges();
+            response.Result = true;
+            response.IsValid = true;
+            response.ResponseMessage = "Item updated successfully";
             return response;
         }
 

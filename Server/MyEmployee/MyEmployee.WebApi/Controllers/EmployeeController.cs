@@ -18,7 +18,7 @@ namespace MyEmployee.WebApi.Controllers
 
         // POST: EmployeeController/Create
         [HttpPost("create")]
-        public async Task<IActionResult> Create(Employeedto employee)
+        public async Task<IActionResult> Create([FromBody] Employeedto employee)
         {
             var response = new ServerResponse<bool>();
             try
@@ -50,21 +50,42 @@ namespace MyEmployee.WebApi.Controllers
             }
             return response;
         }
-        // POST: EmployeeController/Edit/5
-        [HttpPost("update")]
-        public async Task<IActionResult> Update(int id, IFormCollection collection)
+
+        // Get: EmployeeController/ReadOne/5
+        [HttpGet("readone/{id}")]
+        public ServerResponse<Employee> ReadOne(int id)
         {
+            var response = new ServerResponse<Employee>();
             try
             {
-                return RedirectToAction(nameof(Index));
+                response = _employeeService.ReadOne(id);
             }
-            catch
+            catch (Exception ex)
             {
-                return View();
+                response.IsValid = false;
+                response.ResponseMessage = ex.Message;
             }
+            return response;
         }
 
-        // Detele: EmployeeController/Delete/5
+        // PUT: EmployeeController/Edit/5
+        [HttpPut("update/{id}")]
+        public ServerResponse<bool> Update(int id, [FromBody] Employeedto employee)
+        {
+            var response = new ServerResponse<bool>();
+            try
+            {
+                response = _employeeService.Update(id, employee);
+            }
+            catch (Exception ex)
+            {
+                response.IsValid = false;
+                response.ResponseMessage = ex.Message;
+            }
+            return response;
+        }
+
+        // Delete: EmployeeController/Delete/5
         [HttpDelete("delete/{id}")]
         public ServerResponse<bool> Delete(int id)
         {

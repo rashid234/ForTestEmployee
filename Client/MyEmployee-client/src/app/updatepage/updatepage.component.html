@@ -1,0 +1,33 @@
+<div class="container">
+  <form class="container mt-3" (ngSubmit)="onSubmit()" #userForm="ngForm">
+    <div class="mb-3">
+      <label for="name" class="form-label">Employee Name (Required *):</label>
+      <input type="text" class="form-control" name="name" [(ngModel)]="model.name" id="name"
+        [pattern]="patternWithoutSpecialChars" aria-describedby="help" #name="ngModel" minlength="2" maxlength="40"
+        required>
+      <div *ngIf="name.invalid && name.touched" id="help" class="form-text text-danger" style="font-size: 12px;">
+        <div *ngIf="name.errors?.['required']">Name is required.</div>
+        <div *ngIf="name.errors?.['minlength']">Name must be at least 2 characters long.</div>
+        <div *ngIf="name.errors?.['maxlength']">Name cannot be more than 40 characters long.</div>
+        <div *ngIf="name.errors?.['pattern']">Name cannot contain special characters.</div>
+      </div>
+    </div>
+    <div class="mb-3">
+      <label for="role" class="form-label">Role (Required *):</label>
+      <input type="text" class="form-control" name="role" [(ngModel)]="model.role" id="role" #role="ngModel"
+        minlength="2" maxlength="60" aria-describedby="rolehelp" required>
+      <div *ngIf="role.invalid && role.touched" id="rolehelp" class="form-text text-danger" style="font-size: 12px;">
+        <div *ngIf="role.errors?.['required']">Role is required.</div>
+        <div *ngIf="role.errors?.['minlength']">Role must be at least 2 characters long.</div>
+        <div *ngIf="role.errors?.['maxlength']">Role cannot be more than 40 characters long.</div>
+      </div>
+    </div>
+    <div class="mb-3">
+      <label for="description" class="form-label">Description :</label><br>
+      <textarea class="form-control" placeholder="Description...." name="description" [(ngModel)]="model.description"
+        id="description" cols="50" rows="8"></textarea>
+    </div>
+    <a class="btn btn-warning m-1" href="./">Cancel</a>
+    <button type="submit" [disabled]="userForm.invalid" class="btn btn-primary">Submit</button>
+  </form>
+</div>

@@ -12,3 +12,4 @@ D:\kandupidtham\ForTest\Server\MyEmployee\MyEmployee.Domain\obj\Debug\net8.0\ref
 D:\kandupidtham\ForTest\Server\MyEmployee\MyEmployee.Domain\obj\Debug\net8.0\MyEmployee.Domain.pdb
 D:\kandupidtham\ForTest\Server\MyEmployee\MyEmployee.Domain\obj\Debug\net8.0\MyEmployee.Domain.genruntimeconfig.cache
 D:\kandupidtham\ForTest\Server\MyEmployee\MyEmployee.Domain\obj\Debug\net8.0\ref\MyEmployee.Domain.dll
+D:\kandupidtham\ForTest\Server\MyEmployee\MyEmployee.Domain\obj\Debug\net8.0\MyEmployee.Domain.sourcelink.json

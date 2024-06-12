@@ -4,6 +4,7 @@ import { ColDef } from 'ag-grid-community'; // Column Definition Type Interface
 import { EmployeeDataServiceService } from '../services/employee-data-service.service';
 import { min } from 'rxjs';
 import { DeleteComponent } from '../delete/delete.component';
+import { UpdateComponent } from '../update/update.component';
 
 @Component({
   selector: 'app-employee-list',
@@ -17,7 +18,7 @@ export class EmployeeListComponent implements OnInit {
     { field: "Role" , filter: 'agTextColumnFilter'},
     { field: "Description" ,filter: 'agTextColumnFilter'},
     { field: "Delete", cellRenderer: DeleteComponent },
-    { field: "Update" }
+    { field: "Update", cellRenderer: UpdateComponent }
   ]
 
   defaultColDef = {
@@ -38,10 +39,9 @@ export class EmployeeListComponent implements OnInit {
           for (let i = 0; i < res.result.length; i++) {
             this.employeeLists.push(
               { Name: res.result[i].name, Role: res.result[i].role, Description: res.result[i].description,
-                Delete: res.result[i].id }
+                Delete: res.result[i].id, Update: res.result[i].id}
             )
           }
-          console.log(this.employeeLists);
         }
       else{
         alert(res.responseMessage)

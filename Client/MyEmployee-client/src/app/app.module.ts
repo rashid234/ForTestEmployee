@@ -10,18 +10,26 @@ import { HttpClientModule } from '@angular/common/http';
 import { AgGridModule } from 'ag-grid-angular';
 import { EmployeeDataServiceService } from './services/employee-data-service.service';
 import { DeleteComponent } from './delete/delete.component';
+import { UpdatepageComponent } from './updatepage/updatepage.component';
+import { UpdateComponent } from './update/update.component';
+import { FormsModule } from '@angular/forms';
+import { CreatepageComponent } from './createpage/createpage.component';
 @NgModule({
   declarations: [
     AppComponent,
     EmployeeListComponent,
-    DeleteComponent
+    DeleteComponent,
+    UpdatepageComponent,
+    UpdateComponent,
+    CreatepageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AgGridAngular,
     HttpClientModule,
-    AgGridModule
+    AgGridModule,
+    FormsModule
   ],
   providers: [EmployeeDataServiceService],
   bootstrap: [AppComponent]

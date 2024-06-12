@@ -1,14 +1,20 @@
+Server-Side:
 NuGet packages:
-
 Microsoft.EntityFrameworkCore
 Microsoft.EntityFrameworkCore.Tools
 Microsoft.EntityFrameworkCore.SqlServer
 
+Replace Server side ConnectionString with your SQLServer Credentials
 On package-manager console:
 Add-Migration
 Update-Database
 
 
 
-For Client side:
+Client-Side:
 npm install ag-grid-angular
+npm install bootstrap
+
+
+Client server integration:
+Make sure baseURL in file employeeDataService in client side match with the URL of server

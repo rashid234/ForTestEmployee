@@ -7,17 +7,11 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-delete',
   template: `
-    <button (click)="delete(value)" id="deletebutton">Delete</button>
+    <button (click)="delete(value)" class="btn btn-danger m-3" id="deletebutton">Delete</button>
   `,
   styles: `
  #deletebutton{
-    background-color: red;
-    color: white;
-    border: 0;
-    border-radius: 10px;
-    padding: 10px;
-    padding-inline: 30px;    
-    margin: 10px;
+    font-size: 13px
 }
   `
 })
@@ -41,11 +35,17 @@ export class DeleteComponent implements OnInit, ICellRendererAngularComp {
   }
 
   delete(id: any){
+    const userConfirmed = confirm('Are you sure want to delete?');
+    if (userConfirmed) {
     this.employeeService.deleteEmployee(id).subscribe((res:any) => {
       if(res?.isValid == true){
         alert("Item deleted successfully")
         window.location.reload()
       }
+      else{
+        alert(res.responseMessage)
+      }
     })
+    }
   }
 }
